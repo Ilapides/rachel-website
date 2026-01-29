@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Poems — Your Name</title>
+  <meta name="description" content="Poems by Your Name." />
+  <link rel="canonical" href="https://yourdomain.com/poems.html" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a class="brand" href="/">Your Name</a>
+      <nav aria-label="Site">
+        <a href="/">Home</a>
+        <a href="/poems.html" aria-current="page">Poems</a>
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Poems</h1>
+      <p class="small">Selected work. (You can reorder these anytime.)</p>
+
+      <ul class="list">
+        <li>
+          <a href="/poems/the-window.html">The Window</a>
+          <span class="meta">2026 • free verse</span>
+        </li>
+        <li>
+          <a href="/poems/night-bus.html">Night Bus</a>
+          <span class="meta">2025 • short</span>
+        </li>
+        <li>
+          <a href="/poems/self-portrait.html">Self-Portrait, With Small Weather</a>
+          <span class="meta">2024 • lyric</span>
+        </li>
+      </ul>
+
+      <hr />
+
+      <div class="card">
+        <p class="small" style="margin:0">
+          If you later want categories (“City”, “Love”, “Sequence I”) we can add that without changing the vibe.
+        </p>
+      </div>
+    </main>
+
+    <footer>
+      <span>© <span id="y"></span> Your Name</span>
+      <span class="small"><a href="/contact.html">Contact</a></span>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

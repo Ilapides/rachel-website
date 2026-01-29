@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Night Bus — Your Name</title>
+  <meta name="description" content="Night Bus — a poem by Your Name." />
+  <link rel="canonical" href="https://yourdomain.com/poems/night-bus.html" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a class="brand" href="/">Your Name</a>
+      <nav aria-label="Site">
+        <a href="/">Home</a>
+        <a href="/poems.html" aria-current="page">Poems</a>
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="poem-title">Night Bus</h1>
+      <p class="small">2025</p>
+
+      <div class="poem">
+        <pre>
+Poem text here.
+
+You can keep it spare.
+A business-card site benefits from restraint.
+        </pre>
+      </div>
+
+      <hr />
+      <p class="small"><a href="/poems.html">← Back to poems</a></p>
+    </main>
+
+    <footer>
+      <span>© <span id="y"></span> Your Name</span>
+      <span class="small"><a href="/poems.html">Poems</a></span>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

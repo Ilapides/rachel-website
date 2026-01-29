@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Not Found — Your Name</title>
+  <meta name="description" content="Page not found." />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a class="brand" href="/">Your Name</a>
+      <nav aria-label="Site">
+        <a href="/">Home</a>
+        <a href="/poems.html">Poems</a>
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Not found</h1>
+      <p>The page you’re looking for doesn’t exist.</p>
+      <p><a href="/">Return home</a></p>
+    </main>
+
+    <footer>
+      <span>© <span id="y"></span> Your Name</span>
+      <span class="small">404</span>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

@@ -1,11 +1,74 @@
 <!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Poet Name</title>
-  </head>
-  <body>
-    <h1>Poet Name</h1>
-    <p>Bio goes here.</p>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Your Name — Poems</title>
+  <meta name="description" content="Poems by Your Name. Selected work, about, and contact." />
+
+  <!-- Replace with your real domain -->
+  <link rel="canonical" href="https://yourdomain.com/" />
+
+  <meta property="og:title" content="Your Name — Poems" />
+  <meta property="og:description" content="Poems by Your Name. Selected work, about, and contact." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://yourdomain.com/" />
+
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a class="brand" href="/">Your Name</a>
+      <nav aria-label="Site">
+        <a href="/" aria-current="page">Home</a>
+        <a href="/poems.html">Poems</a>
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Poems & small work</h1>
+      <p class="small">A compact portfolio / calling card.</p>
+
+      <div class="card">
+        <p><strong>Selected poem</strong></p>
+        <p style="margin-top:0.2rem"><a href="/poems/the-window.html">The Window</a></p>
+        <p class="small">A short note can go here: publication, year, or a one-line description.</p>
+      </div>
+
+      <h2>Quick links</h2>
+      <ul class="list">
+        <li>
+          <a href="/poems.html">Read poems</a>
+          <span class="meta">A small selection (expand over time)</span>
+        </li>
+        <li>
+          <a href="/about.html">About</a>
+          <span class="meta">Bio, publications, readings (optional)</span>
+        </li>
+        <li>
+          <a href="/contact.html">Contact</a>
+          <span class="meta">Email + socials</span>
+        </li>
+      </ul>
+
+      <hr />
+
+      <p class="small">
+        Tip: You can keep the site “quiet” and still professional. A poem list + a clean about page is enough.
+      </p>
+    </main>
+
+    <footer>
+      <span>© <span id="y"></span> Your Name</span>
+      <span class="small">Built on GitHub Pages</span>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
 </html>

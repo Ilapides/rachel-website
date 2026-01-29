@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>About — Your Name</title>
+  <meta name="description" content="About Your Name." />
+  <link rel="canonical" href="https://yourdomain.com/about.html" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a class="brand" href="/">Your Name</a>
+      <nav aria-label="Site">
+        <a href="/">Home</a>
+        <a href="/poems.html">Poems</a>
+        <a href="/about.html" aria-current="page">About</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1>About</h1>
+
+      <p>
+        Your one-paragraph bio goes here. Keep it simple: where you live (optional), what you write,
+        and one or two anchors (journal, award, reading series, etc.).
+      </p>
+
+      <h2>Selected publications</h2>
+      <ul class="list">
+        <li>
+          <span><strong>Journal / Venue</strong> — “Poem Title”</span>
+          <span class="meta">Year</span>
+        </li>
+        <li>
+          <span><strong>Journal / Venue</strong> — “Poem Title”</span>
+          <span class="meta">Year</span>
+        </li>
+      </ul>
+
+      <h2>Readings</h2>
+      <ul class="list">
+        <li>
+          <span><strong>Series / Location</strong></span>
+          <span class="meta">Month Year</span>
+        </li>
+      </ul>
+
+      <hr />
+
+      <p class="small">
+        Optional: add a short artist statement here — 2–4 sentences max.
+      </p>
+    </main>
+
+    <footer>
+      <span>© <span id="y"></span> Your Name</span>
+      <span class="small"><a href="/poems.html">Poems</a></span>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

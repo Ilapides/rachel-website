@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Self-Portrait, With Small Weather — Your Name</title>
+  <meta name="description" content="Self-Portrait, With Small Weather — a poem by Your Name." />
+  <link rel="canonical" href="https://yourdomain.com/poems/self-portrait.html" />
+  <link rel="stylesheet" href="/style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a class="brand" href="/">Your Name</a>
+      <nav aria-label="Site">
+        <a href="/">Home</a>
+        <a href="/poems.html" aria-current="page">Poems</a>
+        <a href="/about.html">About</a>
+        <a href="/contact.html">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <h1 class="poem-title">Self-Portrait, With Small Weather</h1>
+      <p class="small">2024</p>
+
+      <div class="poem">
+        <pre>
+Poem text here.
+
+If you want italics, use HTML tags:
+<i>like this</i>
+
+If you want an epigraph, add it above the poem in smaller type.
+        </pre>
+      </div>
+
+      <hr />
+      <p class="small"><a href="/poems.html">← Back to poems</a></p>
+    </main>
+
+    <footer>
+      <span>© <span id="y"></span> Your Name</span>
+      <span class="small"><a href="/about.html">About</a></span>
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
